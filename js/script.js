@@ -55,7 +55,7 @@ form.addEventListener('submit', (event) => {
             }
         })
         .then(data => {
-            messageArea.value = `${JSON.stringify(data, undefined,4)}</div>`;
+            messageArea.value = `${JSON.stringify(data, undefined,4)}`;
         })
         .catch(error => {
             messageArea.value = `<div class="message error">${error}</div>`;
